@@ -1,0 +1,24 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Ajusta el alto mínimo para que el hero no sea tan grande en móviles */
+@media (max-width: 768px) {
+    .min-vh-100 {
+        min-height: 80vh !important;
+    }
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
